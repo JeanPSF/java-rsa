@@ -9,11 +9,13 @@ import java.security.PublicKey;
 
 public class main {
 
+	
+	
 	public static void main(String[] args) {
 			
 	  String myMsg = "RSA é um algoritmo que deve o seu nome a três professores do MIT: Ronald Rivest, Adi Shamir e Leonard Adleman";
 	  String login = "Jean"; 
-	  String pass = "jean";
+	  String pass = "523461";
 	  MD5 MD5 = new MD5();
 	  //MD5.stringTest();
 	  String encryptedPass = MD5.encrypt(pass);

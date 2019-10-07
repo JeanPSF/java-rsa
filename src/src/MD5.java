@@ -7,17 +7,11 @@ import java.security.NoSuchAlgorithmException;
 public class MD5 {
 	private static final String ALGORITHM = "MD5";
 	private static final String tokens = "0123456789abcdefghijklmnopqrstuvwxyz ";
-	private static final String tokensJean = "aejn";
+	private static final String tokensJean = "123456";
 	MD5() { }
 	
 	public void stringTest() {
-		String a = "a";
-		String a1 = "a";
-		if(a == a1) {
-			System.out.println("a");
-		} else {			
-			System.out.println("b");
-		}
+		
 	}
 	
 	public String encrypt(String msg) {
@@ -58,7 +52,7 @@ public class MD5 {
 	        	String checking = encrypt(tokensAvailable);
 	        	System.out.println(checking);
 	        	System.out.println(answer);
-	        	if (checking.toString() == answer.toString()) {
+	        	if (checking.toString().equals(answer.toString())) {
 	        		System.out.println("RESPOSTA AQUI TIO! => "+tokensAvailable);
 	        	}
 	        	System.out.println("------------------------------------------");
